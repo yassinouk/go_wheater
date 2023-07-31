@@ -37,3 +37,17 @@ go build -o go_weather
 ```bash
 ./go_weather
 ```
+## Example output
+```bash
+$ go run main.go
+London, United Kingdom: 19°C, Light rain
+15:07|---> 20°C, 85%, Patchy rain possible
+16:07|---> 21°C, 0%, Partly cloudy
+17:07|---> 21°C, 0%, Partly cloudy
+18:07|---> 20°C, 0%, Partly cloudy
+19:07|---> 20°C, 0%, Partly cloudy
+20:07|---> 18°C, 0%, Partly cloudy
+21:07|---> 17°C, 0%, Partly cloudy
+22:07|---> 16°C, 0%, Partly cloudy
+23:07|---> 16°C, 0%, Partly cloudy
+```
