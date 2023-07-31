@@ -1,7 +1,5 @@
 # Weather CLI App in Golang
 
-This CLI app is fetching data from a weather API and displaying it in the terminal with colored output.
-
 ## Project Information
 
 - Project: weather-cli
