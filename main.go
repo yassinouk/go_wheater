@@ -42,8 +42,8 @@ func main() {
 	colorRed := "\033[31m"
 	colorGreen := "\033[32m"
 	colorYellow := "\033[33m"
-
-	/* fmt.Println(string(colorYellow), "test", string(colorReset)) */
+	/* this is to reset the color if you want to*/
+	/* fmt.Println("test", string(colorReset)) */
 	/* url := "http://api.weatherapi.com/v1/" */
 	/* params := [5]string{"current.json", "forecast.json", "marine.json", "stronomy.json", "ip.json"} */
 
