@@ -5,9 +5,12 @@ name: Go
 
 on:
   push:
-    branches: [ "main", "changes/docker-actions" ]
+    branches: 
+      - main 
+      - 'changes/docker-actions'
   pull_request:
-    branches: [ "main" ]
+    branches: 
+      - main
 
 jobs:
 
