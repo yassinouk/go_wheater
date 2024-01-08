@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"time"
 )
@@ -58,7 +58,12 @@ func main() {
 	if resp.StatusCode != 200 {
 		panic("something went wrong! wheater api is not reachable for today")
 	}
-	body, err := ioutil.ReadAll(resp.Body)
+	//read the body of the response
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		panic(err)
+	}
 	var weather Weather
 	err = json.Unmarshal(body, &weather)
 	if err != nil {
